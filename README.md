@@ -1,7 +1,7 @@
 
 ---
 
-# YaratelBot Project Documentation
+# YaratelBot Project Document
 
 **Author**: Nihan  
 **Date**: April 12, 2025  
