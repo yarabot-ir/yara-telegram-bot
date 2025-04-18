@@ -1,0 +1,13 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.git
+.gitignore
+*.log
+temp_audio/
+converted_wav_files/
+chat_logs.json
