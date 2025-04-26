@@ -11,6 +11,8 @@ from telegram.ext import (
     filters,
     CallbackContext
 )
+import os
+from dotenv import load_dotenv
 
 # Set up logging to write to a file
 logging.basicConfig(
@@ -24,9 +26,10 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Credentials and endpoint settings
-TELEGRAM_TOKEN = ''
-AGENT_ID = ''
-API_TOKEN = ''
+load_dotenv(dotenv_path=".env")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+AGENT_ID = os.getenv("AGENT_ID")
+API_TOKEN = os.getenv("AGENT_TOKEN")
 
 # API endpoint
 CHAT_API_URL = f'https://backend.yarabot.ir/agent/bot/{AGENT_ID}/chat'
